@@ -1,0 +1,6 @@
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+
+#title { text-align: center; padding-top: 30px;}
+#box { text-align: center;}
+#box canvas {background: #ccc;}
