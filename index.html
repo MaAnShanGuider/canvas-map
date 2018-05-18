@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/index.css">
+	<title>迷宫</title>
+	<meta charset='utf-8' />
 </head>
 <body>
-	<h3 id="title">自动寻路</h3>
-	<div id="box">
-		<canvas width="600px" height='600px' id="canvas"></canvas>
-		<br>
-		<button id="btn">开始寻路</button>
-	</div>
-
+    <script src='./js/Util.js'></script>
+	<script src='./js/maze.js'></script>
+    <script>
+        window.onload = function() {
+            new Maze(10, 10);
+        }
+    </script>
 </body>
-<!-- 
-	1. 首先是生成地图，
-	2. 根据点击生成两个初始点，结束点
-	3. 也不用点击寻路了，自己通过方向键控制走吧
- -->
-<script src="./js/index.js"></script>
 </html>
