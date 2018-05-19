@@ -10,7 +10,11 @@
 	<script src='./js/maze.js'></script>
     <script>
         window.onload = function() {
-            new Maze(10, 10);
+        	/**
+        	 * 这个参数，如果都为奇数，那么中心点为通路格子
+        	 * 为偶数，中心点为闭路格子(墙)
+        	 */
+            new Maze(4, 4);
         }
     </script>
 </body>
